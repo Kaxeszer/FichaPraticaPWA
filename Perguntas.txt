@@ -21,3 +21,10 @@ Resposta à Pergunta 3:
 
 Os conflitos ocorrem quando o Git não consegue integrar automaticamente alterações realizadas sobre o mesmo conteúdo. No contexto do comando git stash pop, isto pode acontecer quando as alterações temporariamente guardadas entram em conflito com as alterações existentes na área de trabalho.
 Para resolver estes conflitos, é necessário identificar os ficheiros afetados, analisar as diferenças assinaladas pelo Git e editar o conteúdo para escolher ou combinar as alterações pretendidas. Depois de resolvidos os conflitos, os ficheiros devem ser guardados e adicionados à área de preparação (staging area) através do comando git add. Se o conflito tiver ocorrido durante um merge, a operação poderá ser concluída com um commit.
+
+
+Resposta à Pergunta 4:
+
+O Clone consiste em criar uma cópia local de um repositório Git existente, incluindo os ficheiros e o histórico de commits. Esta operação permite trabalhar no projeto no computador e sincronizar as alterações com o repositório remoto, desde que existam as permissões necessárias.
+O Fork consiste em criar uma cópia de um repositório remoto para a própria conta numa plataforma como o GitHub. Esta cópia permite desenvolver alterações de forma independente, sem modificar diretamente o repositório original.
+A principal diferença é que o Clone cria uma cópia local do repositório, enquanto o Fork cria uma cópia remota independente. É comum realizar um Fork e, posteriormente, um Clone dessa cópia para trabalhar localmente. As alterações podem depois ser propostas ao projeto original através de um Pull Request.
