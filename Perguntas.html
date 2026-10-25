@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas e Respostas - Programação Web Avançada</title>
+</head>
+<body>
+
+<h1>Perguntas:</h1>
+
+<ol>
+    <li>O que são operações de “Commit”, “Push” e “Pop” efetuadas num repositório?</li>
+    <li>Quais sáo as vantagens de usar Branchs num repositório git?</li>
+    <li>Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em que consistem e como podem ser resolvidos esses conflitos?</li>
+    <li>“Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?</li>
+</ol>
+
+<h2>Resposta à Pergunta 1:</h2>
+
+<p>O <strong>Commit</strong> é uma operação que regista um conjunto de alterações no histórico do repositório Git local, permitindo acompanhar a evolução do projeto e consultar versões anteriores.</p>
+
+<p>O <strong>Push</strong> permite enviar os commits e respetivas alterações do repositório local para um repositório remoto, como o GitHub, atualizando-o e facilitando a partilha do trabalho.</p>
+
+<p>O <strong>Pop</strong>, no contexto do comando <code>git stash pop</code>, permite recuperar e reaplicar alterações que foram guardadas temporariamente através do <code>git stash</code>. Quando a operação é concluída com sucesso, essas alterações são removidas da lista de alterações temporariamente guardadas.</p>
+
+<h2>Resposta à Pergunta 2:</h2>
+
+<p>As <strong>branches</strong> permitem criar linhas de desenvolvimento independentes dentro de um repositório Git, possibilitando trabalhar em novas funcionalidades, corrigir erros ou experimentar alterações sem interferir diretamente com a branch principal do projeto.</p>
+
+<p>Entre as principais vantagens destacam-se:</p>
+
+<ul>
+    <li>A possibilidade de desenvolver diferentes funcionalidades em paralelo;</li>
+    <li>O isolamento das alterações;</li>
+    <li>A organização do trabalho;</li>
+    <li>A facilidade de colaboração entre programadores.</li>
+</ul>
+
+<p>Depois de concluídas e validadas, as alterações podem ser integradas noutra branch através de uma operação de <em>merge</em>.</p>
+
+<h2>Resposta à Pergunta 3:</h2>
+
+<p>Os conflitos ocorrem quando o Git não consegue integrar automaticamente alterações realizadas sobre o mesmo conteúdo. No contexto do comando <code>git stash pop</code>, isto pode acontecer quando as alterações temporariamente guardadas entram em conflito com as alterações existentes na área de trabalho.</p>
+
+<p>Para resolver estes conflitos, é necessário identificar os ficheiros afetados, analisar as diferenças assinaladas pelo Git e editar o conteúdo para escolher ou combinar as alterações pretendidas. Depois de resolvidos os conflitos, os ficheiros devem ser guardados e adicionados à <u>área de preparação (staging area)</u> através do comando <code>git add</code>. Se o conflito tiver ocorrido durante um <em>merge</em>, a operação poderá ser concluída com um commit.</p>
+
+<h2>Resposta à Pergunta 4:</h2>
+
+<p>O <strong>Clone</strong> consiste em criar uma cópia local de um repositório Git existente, incluindo os ficheiros e o histórico de commits. Esta operação permite trabalhar no projeto no computador e sincronizar as alterações com o repositório remoto, desde que existam as permissões necessárias.</p>
+
+<p>O <strong>Fork</strong> consiste em criar uma cópia de um repositório remoto para a própria conta numa plataforma como o GitHub. Esta cópia permite desenvolver alterações de forma independente, sem modificar diretamente o repositório original.</p>
+
+<p>A principal diferença é que o <strong>Clone</strong> cria uma cópia local do repositório, enquanto o <strong>Fork</strong> cria uma cópia remota independente. É comum realizar um Fork e, posteriormente, um Clone dessa cópia para trabalhar localmente. As alterações podem depois ser propostas ao projeto original através de um <em>Pull Request</em>.</p>
+
+</body>
+</html>
