@@ -16,3 +16,8 @@ Resposta à Pergunta 2:
 
 As branches permitem criar linhas de desenvolvimento independentes dentro de um repositório Git, possibilitando trabalhar em novas funcionalidades, corrigir erros ou experimentar alterações sem interferir diretamente com a branch principal do projeto.
 Entre as principais vantagens destacam-se a possibilidade de desenvolver diferentes funcionalidades em paralelo, o isolamento das alterações, a organização do trabalho e a facilidade de colaboração entre programadores. Depois de concluídas e validadas, as alterações podem ser integradas noutra branch através de uma operação de merge.
+
+Resposta à Pergunta 3:
+
+Os conflitos ocorrem quando o Git não consegue integrar automaticamente alterações realizadas sobre o mesmo conteúdo. No contexto do comando git stash pop, isto pode acontecer quando as alterações temporariamente guardadas entram em conflito com as alterações existentes na área de trabalho.
+Para resolver estes conflitos, é necessário identificar os ficheiros afetados, analisar as diferenças assinaladas pelo Git e editar o conteúdo para escolher ou combinar as alterações pretendidas. Depois de resolvidos os conflitos, os ficheiros devem ser guardados e adicionados à área de preparação (staging area) através do comando git add. Se o conflito tiver ocorrido durante um merge, a operação poderá ser concluída com um commit.
